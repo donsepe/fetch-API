@@ -1,0 +1,59 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Country & Weather Explorer</title>
+  <p>This webpage uses async functions to call two APIs and is hosted in AWS S3 bucket.</p>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🌍 Country & Weather Explorer</h1>
+
+  <div class="controls">
+    <select id="countryDropdown"></select>
+    <input type="text" id="searchInput" placeholder="Search country..." autocomplete="off">
+<div id="suggestions" class="suggestions"></div>
+    <button id="searchBtn">Search</button>
+    <button id="clearBtn">Clear</button>
+  </div>
+
+  <div id="results"></div>
+
+  <script src="countries.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Country Info Finder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🌍 Country Info Finder</h1>
+
+  <div class="controls">
+    <!-- Dropdown -->
+    <select id="countryDropdown">
+      <option value="">-- Select a Country --</option>
+    </select>
+
+    <!-- Search bar with autocomplete -->
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search country..." autocomplete="off">
+      <div id="suggestions"></div>
+    </div>
+
+    <!-- Buttons -->
+    <button id="searchBtn">🔍 Search</button>
+    <button id="clearBtn" class="clear">🗑 Clear</button>
+  </div>
+
+  <!-- Results Section -->
+  <div id="results"></div>
+
+  <script src="countries.js"></script>
+</body>
+</html>
